@@ -96,27 +96,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-body{
- background: url(../images/bg.png);
- font-family: 'Open Sans', sans-serif;
- height: 100%;
-}
-article{
-    margin-top: 20px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
-    /*text-align: center;*/
-}
-
-.site{
-    font-size: 20px;
-    padding: 10px;
-}
-.icontain{
-    padding-top: 20px;
-        }
-
-
 
 /* ==========================================================================
    Helper classes

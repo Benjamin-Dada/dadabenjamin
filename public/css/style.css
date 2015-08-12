@@ -1,0 +1,25 @@
+body{
+ margin: auto;
+ padding: auto;
+ background: url(../images/bg.png);
+ font-family: 'Open Sans', sans-serif;
+ height: 100%;
+}
+article{
+	padding-top: 5px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    /*text-align: center;*/
+}
+
+.site{
+    font-size: 20px;
+    padding: 10px;
+}
+.icontain{
+    padding-top: 20px;
+        }
+a{
+	text-decoration: none;
+}

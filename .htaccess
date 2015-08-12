@@ -1,0 +1,1 @@
+RewriteEngine onrewritecond %{http_host} ^http://dadabenjamin.herokuapp.com [nc]rewriterule ^(.*)$ http://benjamindada.com/$1
