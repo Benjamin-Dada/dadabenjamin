@@ -23,3 +23,9 @@ article{
 a{
 	text-decoration: none;
 }
+
+@media only screen and (max-width: 480px) { 
+    #twitterFeed{
+        padding-top: 20px;
+    }
+}
