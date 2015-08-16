@@ -10,7 +10,7 @@ benjamin.config(['$routeProvider','$locationProvider',function($routeProvider,$l
 }]);
 
 benjamin.controller('mainCtrl',['$scope','$location',function($scope,$location){
-	$scope.isActive = function (viewLocation) { 
+	$scope.isActive = function(viewLocation) { 
 		return viewLocation === $location.path();
 	};
 	var today = new Date();
