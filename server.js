@@ -6,7 +6,7 @@ var path = require('path');
 
 //app.use(favicon(__dirname + '/public/favicon.ico'));
 
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 8088;
 
 app.listen(port, function(err){
 	if(err){
