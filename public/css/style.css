@@ -1,10 +1,9 @@
 body{margin:0 auto;padding:auto;background:url(http://res.cloudinary.com/dgpjdyg8p/image/upload/v1442273677/bg_rfbmux.png);font-family:'Open Sans', sans-serif;height:100%;}
 article{padding-top:5px;margin:0 auto;font-family:'Open Sans', sans-serif;font-size:20px;}
-.site{font-size:20px;padding:10px;}
-.icontain{padding-top:20px;}
+/*.site{font-size:20px;padding:10px;}
+.icontain{padding-top:20px;}*/
 .row-centered{text-align: center;}
 .col-centered{text-align:center;}
 .left-col-centered{text-align:left;}
-a{text-decoration:none;}
-@media only screen and (max-width:480px){#twitterFeed{padding-top:20px;}
-}
+/*@media only screen and (max-width:480px){#twitterFeed{padding-top:20px;}*/
+/*}*/
