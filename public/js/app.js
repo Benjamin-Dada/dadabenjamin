@@ -13,19 +13,18 @@ benjamin.controller('mainCtrl',['$scope','$location','$http', '$templateCache',
 		{return viewLocation===$location.path();};
 		var today=new Date();$scope.year=today.getFullYear();
 
-		//MY ERROR BEGINS HERE
-		$scope.name = "xx";
-		$scope.email = "yy";
+		$scope.name = "";
+		$scope.email = "";
 		$scope.submit=function(){
 				
 //console.log($scope.name);
 				//console.log($scope.email);
-				var data = {name: $scope.name};
+				var data = {name: $scope.name, email: $scope.email};
 				//console.log(data.name);
 				//console.log(data);
 				//console.log($scope.name);
-		$http.post('http://localhost:8080/hello', name)
-			.success(function(data){alert("name entered.");})
+		$http.post('http://localhost:8080/hello', data)
+			.success(function(data){alert("submitted.");})
 			.error(function(data){alert("error.")});
 
 	}

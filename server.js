@@ -52,17 +52,15 @@ app.post('/hello', function(req,res){
 
 	var details = new Details(req.body);
 
-	var name = req.body.name;
-	var email = req.body.email;
-
-	//res.send(name+''+email); {"name": name, "email": email}, 
-
 	details.save(function(err,data){
  		if (err) {
  			res.send(err);
  		}
  		res.json(data);
  	});
+console.log(req.body);
+
+
 
 });
 
