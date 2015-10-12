@@ -9,7 +9,7 @@ var bodyParser = require('body-parser');
 //var favicon = require('serve-favicon');
 //var logger = require("morgan");
 
-mongoose.connect('mongodb://localhost:27017/contact', function(err){
+mongoose.connect('mongodb://dada:root@ds035844.mongolab.com:35844/contact', function(err){
   if(err){console.log("Connection failed: ", err);}
   else{console.log('Connection to db successful');}
 });
