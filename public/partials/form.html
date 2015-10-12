@@ -1,46 +1,46 @@
 <div class="container" style="padding-top: 70px;">
+
+  <!-- create our form -->
+  <form name="userForm">
     
-    <!-- create our form -->
-    <form name="userForm" novalidate>
-        
-        <!-- name field -->
-        <div class="form-group">
-            <label>Name</label>
-            <input type="text" name="name" class="form-control" 
-                ng-model="name"
-                ng-minlength="5"
-                ng-maxlength="10"
-                required>
-                
-            <!-- ngMessages goes here -->
-            <div class="help-block" ng-messages="userForm.name.$error" style="color:maroon" role="alert" ng-if="userForm.name.$touched">
-                <div ng-message="required">You did not enter a field</div>
-                <div ng-message="minlength">Your field is too short</div>
-                <div ng-message="maxlength">Your field is too long</div>
-            </div>
-        </div>
-        
-        <!-- email field -->
-        <div class="form-group">
-            <label>Email</label>
-            <input type="email" name="email" class="form-control" 
-                ng-model="email"
-                ng-minlength="5"
-                ng-maxlength="20"
-                required>
-                
-            <!-- ngMessages goes here -->
-            <div class="help-block" ng-messages="userForm.email.$error" style="color:maroon" role="alert" ng-show="userForm.email.$touched">
-                <div ng-message="required">You did not enter a field</div>
-                <div ng-message="minlength">Your field is too short</div>
-                <div ng-message="maxlength">Your field is too long</div>
-            </div>
-        </div>
-        
-        <div class="form-group">
-            <button type="submit" class="btn btn-danger" ng-click="submit()">Submit</button>
-        </div>
-        
-    </form>
+    <!-- name field -->
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" name="name" class="form-control" placeholder="John Doe"
+      ng-model="name"
+      ng-minlength="5"
+      ng-maxlength="50"
+      required>
+      
+      <!-- ngMessages goes here -->
+      <div class="help-block" ng-messages="userForm.name.$error" style="color:maroon" role="alert" ng-if="userForm.name.$touched">
+        <div ng-message="required">You did not enter a field</div>
+        <div ng-message="minlength">Your field is too short</div>
+        <div ng-message="maxlength">Your field is too long</div>
+      </div>
+    </div>
+    
+    <!-- email field -->
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" name="email" class="form-control" placeholder="john@doe.com"
+      ng-model="email"
+      ng-minlength="5"
+      ng-maxlength="50"
+      required>
+      <div class="help-block with-errors"></div>
+      <!-- ngMessages goes here -->
+      <div class="help-block" ng-messages="userForm.email.$error" style="color:maroon" role="alert" ng-show="userForm.email.$touched">
+        <div ng-message="required">You did not enter a field</div>
+        <div ng-message="minlength">Your field is too short</div>
+        <div ng-message="maxlength">Your field is too long</div>
+      </div>
+    </div>
+    
+    <div class="form-group">
+      <button type="submit" class="btn btn-danger" ng-click="submit()" ng-disabled="userForm.$invalid">Submit</button>
+    </div>
+    
+  </form>
 </div>
-    
+
