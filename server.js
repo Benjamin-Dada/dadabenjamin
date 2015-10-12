@@ -8,12 +8,13 @@ var bodyParser = require('body-parser');
 
 //var favicon = require('serve-favicon');
 //var logger = require("morgan");
-var dbConnectionString = process.env.MONGOLAB_URI;
+var dbConnectionString = "mongodb://heroku_0djgnvtt:u7gud60sp2m6389a7c7mi09hcv@ds035844.mongolab.com:35844/heroku_0djgnvtt";
 
+console.log(dbConnectionString);
 if (dbConnectionString !== undefined) {
   mongoose.connect(dbConnectionString, function(err){
     if(err){console.log("Connection failed: ", err);}
-    else{console.log('Connection to db successful');}
+    else{console.log('Connection to online db successful');}
 });
 
 } else{
