@@ -8,11 +8,25 @@ var bodyParser = require('body-parser');
 
 //var favicon = require('serve-favicon');
 //var logger = require("morgan");
+var dbConnectionString = process.env.MONGOLAB_URI;
 
-mongoose.connect('mongodb://dada:root@ds035844.mongolab.com:35844/contact', function(err){
+if (dbConnectionString !== undefined) {
+  mongoose.connect(dbConnectionString, function(err){
+    if(err){console.log("Connection failed: ", err);}
+    else{console.log('Connection to db successful');}
+});
+
+} else{
+  mongoose.connect('mongodb://dada:root@ds035844.mongolab.com:35844/contact', function(err){
   if(err){console.log("Connection failed: ", err);}
   else{console.log('Connection to db successful');}
 });
+};
+
+/*mongoose.connect('mongodb://dada:root@ds035844.mongolab.com:35844/contact', function(err){
+  if(err){console.log("Connection failed: ", err);}
+  else{console.log('Connection to db successful');}
+});*/
 
 
 var Details = mongoose.model('Details', { 
