@@ -3,8 +3,8 @@ benjamin.config(['$routeProvider','$locationProvider',
 	function($routeProvider,$locationProvider)
 	{	$routeProvider
 		.when("/",{templateUrl:'/partials/about_me.html',controller:'mainCtrl'})
-		.when("/projects",{templateUrl:'/partials/gallery.html',controller:'mainCtrl'})
-		.when("/about_site",{templateUrl:'/partials/about_site.html',controller:'mainCtrl'})
+		.when("/projects",{templateUrl:'/partials/projects.html',controller:'mainCtrl'})
+		.when("/gallery",{templateUrl:'/partials/gallery.html',controller:'mainCtrl'})
 		.otherwise({redirectTo:"/"});$locationProvider.html5Mode(true);}
 		]);
 benjamin.controller('mainCtrl',['$scope','$location','$http', '$templateCache',
