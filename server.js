@@ -8,7 +8,8 @@ var bodyParser = require('body-parser');
 
 //var favicon = require('serve-favicon');
 //var logger = require("morgan");
-var dbConnectionString = "mongodb://heroku_0djgnvtt:u7gud60sp2m6389a7c7mi09hcv@ds035844.mongolab.com:35844/heroku_0djgnvtt";
+
+/*var dbConnectionString = "mongodb://heroku_0djgnvtt:u7gud60sp2m6389a7c7mi09hcv@ds035844.mongolab.com:35844/heroku_0djgnvtt";
 
 console.log(dbConnectionString);
 if (dbConnectionString !== undefined) {
@@ -22,7 +23,7 @@ if (dbConnectionString !== undefined) {
   if(err){console.log("Connection failed: ", err);}
   else{console.log('Connection to db successful');}
 });
-};
+};*/
 
 /*mongoose.connect('mongodb://dada:root@ds035844.mongolab.com:35844/contact', function(err){
   if(err){console.log("Connection failed: ", err);}
@@ -30,11 +31,11 @@ if (dbConnectionString !== undefined) {
 });*/
 
 
-var Details = mongoose.model('Details', { 
+/*var Details = mongoose.model('Details', { 
 				name : String,
 				email: String,
 				updated_at: {type: Date, default: Date.now}
-});
+});*/
 
 //var details = require('./model/details.js');
 
@@ -63,7 +64,7 @@ app.get('/', function(req, res){
 	//res.sendFile("C:\\Users\\Benjamin\\workspace\\JS-Workspace\\dadabenjamin\\public\\index.html");
 });
 
-app.post('/hello', function(req,res){
+/*app.post('/hello', function(req,res){
 
 	var details = new Details(req.body);
 
@@ -77,7 +78,7 @@ console.log(req.body);
 
 
 
-});
+});*/
 
 app.use(compress());
 app.use(express.static(path.join(__dirname + '/public')));

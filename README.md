@@ -2,5 +2,4 @@
 
 This is my first ever attempt to making a website.
 
-Uses the M.E.A.N. Stack.
-. 
+Using the M.E.A.N. Stack.

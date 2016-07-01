@@ -5,5 +5,8 @@ article{padding-top:5px;margin:0 auto;font-family:'Open Sans', sans-serif;font-s
 .row-centered{text-align: center;}
 .col-centered{text-align:center;}
 .left-col-centered{text-align:left;}
+a{
+	text-decoration: none;
+}
 /*@media only screen and (max-width:480px){#twitterFeed{padding-top:20px;}*/
 /*}*/
