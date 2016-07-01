@@ -42,7 +42,7 @@ if (dbConnectionString !== undefined) {
 //var contact = require("./app/routes.js");
 //app.use(favicon(__dirname + '/public/favicon.ico'));
 
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 8085;
 
 //app.use(express.logger('dev')); 
 app.use(bodyParser.json());
@@ -60,7 +60,7 @@ app.listen(port, function(err){
 });
 
 app.get('/', function(req, res){
-	res.sendfile('./public/index.html');
+	res.sendFile('./public/index.html', { root: __dirname});
 	//res.sendFile("C:\\Users\\Benjamin\\workspace\\JS-Workspace\\dadabenjamin\\public\\index.html");
 });
 
@@ -81,6 +81,8 @@ console.log(req.body);
 });*/
 
 app.use(compress());
-app.use(express.static(path.join(__dirname + '/public')));
+
+//Enable Express static content serving:  
+app.use(express.static('public')); //Static path is folder called public
 
 module.exports = app;
