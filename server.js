@@ -42,7 +42,7 @@ if (dbConnectionString !== undefined) {
 //var contact = require("./app/routes.js");
 //app.use(favicon(__dirname + '/public/favicon.ico'));
 
-var port = process.env.PORT || 8085;
+var port = process.env.PORT || 8080;
 
 //app.use(express.logger('dev')); 
 app.use(bodyParser.json());
